@@ -25,11 +25,9 @@ endef
 # KHAJE BASE DTB
 SEC_KHAJE_BASE_DTB := ../../../vendor/qcom/khaje.dtb
 
-$(eval $(call sec_dtbo_build, \
-		$(SEC_SYSTEM_UPDATE_DTBO),$(CONFIG_ARCH_KHAJE),$(SEC_KHAJE_BASE_DTB)))
+#$(eval $(call sec_dtbo_build, \
+#		$(SEC_SYSTEM_UPDATE_DTBO),$(CONFIG_ARCH_KHAJE),$(SEC_KHAJE_BASE_DTB)))
 
-always          := $(dtb-y)
-subdir-y        := $(dts-dirs)
 endif
 
 clean-files := *.dtb *.reverse.dts *.dtbo
